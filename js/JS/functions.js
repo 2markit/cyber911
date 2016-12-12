@@ -58,7 +58,7 @@ $(window).scroll(function(){
     $('.post-3').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.2) +'px)'});
 
   }
-}
+};
 
 
 
@@ -89,27 +89,33 @@ $(document).ready(function(){
 
     }
 
-  }
-);
+  });
+
 
 
   // Scroll to element
 
-  $("#menu-1").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#services").offset().top
-      }, 2000);
-});
+$(document).ready(function (){
+            $("#menu-1").selected(function (){
+                $('html, body').animate({
+                    scrollTop: $("#services").offset().top
+                }, 2000);
+            });
+        });
 
-  $("#menu-2").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 2000);
-});
+$(document).ready(function (){
+            $("#click").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#div1").offset().top
+                }, 2000);
+            });
+        });
 
-  $("#menu-3").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contact").offset().top
-    }, 2000);
-});
+$(document).ready(function (){
+            $("#click").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#div1").offset().top
+                }, 2000);
+            });
+        });
 });
