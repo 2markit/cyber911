@@ -11,7 +11,7 @@ $(window).scroll(function(){
     });
 
     $('.back-ground').css({
-      'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+      'transform' : 'translate(0px, -'+ wScroll /4 +'%)'
     });
 
     $('.fore-ground').css({
@@ -91,25 +91,4 @@ $(document).ready(function(){
 
   }
 );
-
-
-  // Scroll to element
-
-  $("#menu-1").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#services").offset().top
-      }, 2000);
-});
-
-  $("#menu-2").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 2000);
-});
-
-  $("#menu-3").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contact").offset().top
-    }, 2000);
-});
 });
