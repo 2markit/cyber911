@@ -6,6 +6,7 @@ body
 h1
   color: black
   weight: 300
+  padding: 0px 30px 0px 30px
 
 a
   color: black
@@ -18,6 +19,10 @@ p
 figure
   margin: auto
 
+hr
+  margin-top: 75px
+  margin-bottom: 75px
+
 
 .content
   position: relative
@@ -26,9 +31,12 @@ figure
 
   article
     padding: 100px 0
-    max-width: 640px
+    max-width: 840px
     margin: 0 auto
     text-align: center
+
+  p
+    padding: 0px 30px 0px 30px
 
 article
   padding: 100px 0
@@ -102,15 +110,15 @@ img
   padding: 0 5px
   opacity: 0.9
   text-decoration: none
-  color: #5c616a
+  color: black
   line-height: 1
 
   
-.header-fixed .header-limiter nav button
+.header-fixed .header-limiter nav a
   display: inline-block
   height: 30px
   padding: 0px 10px 10px 10px
-  color: #555
+  color: black
   text-align: center
   font-size: 12px
   font-weight: 600
@@ -121,14 +129,13 @@ img
   white-space: nowrap
   background-color: transparent
   border-radius: 4px
-  border: 1px solid #bbb
   cursor: pointer
   box-sizing: border-box
 
 
-.header-fixed .header-limiter nav button:hover 
-  background-color: #86a3d5
-  color: #ffffff
+.header-fixed .header-limiter nav a:hover 
+  background-color: #000055
+  color: black
   border-radius: 4px
   padding: 0px 10px
 
@@ -183,13 +190,13 @@ body.fixed .header-fixed .header-limiter .logo
   border-radius: 15px
 
 
-body.fixed .header-fixed .header-limiter nav button
+body.fixed .header-fixed .header-limiter nav a
   font-size: 10px
 
 
-body.header-fixed .header-limiter nav button:hover 
+body.header-fixed .header-limiter nav a:hover 
   background-color: #86a3d5
-  color: #ffffff
+  color: black
   border-radius: 4px
   padding: 0px 10px
 
@@ -200,14 +207,14 @@ body.header-fixed .header-limiter nav button:hover
 
 .para-box
   position: relative
-  padding: 120px 0px 0px 0px
-  height: 700px
+  padding: 0px 0px 0px 0px
+  height: 400px
   background: white
-  background-image: url(../images/hdd-bg.gif)
-  background-size: 1500px
-  background-position: top center
-  background-attachment: fixed
-  background-repeat: no-repeat
+    image: url(../images/hdd-bg.gif)
+    size: 100%
+    position: top center
+    attachment: fixed
+    repeat: no-repeat
   overflow: hidden
 
 .para-box-2
@@ -233,16 +240,16 @@ body.header-fixed .header-limiter nav button:hover
   top: 380px
 
 .back-ground
-  background-color: rgba(69,69,69,0.7)
-  width: 640px
-  height: 450px
-  position: absolute
-  left: 50%
-  margin-top: -50px
-  margin-left: -320px
-  text-align: center
-  padding: 20px 0px 20px 0px
-  border-radius: 20px
+  position: relative
+  padding: 0px 0px 0px 0px
+  margin: 0 auto
+  height: 550px
+  background: white
+    image: url(../images/keyboard-blue.jpg)
+    size: 100%
+    repeat: no-repeat
+    attachment: fixed
+  overflow: hidden
 
 // para-box text
 
@@ -268,11 +275,20 @@ body.header-fixed .header-limiter nav button:hover
 // Grid
 
 .grid-pics
-  margin: 20px 0px 50px 0px
+  margin: 0 auto
+  position: center
+  color: white
+
+  h1
+
+
+  p
+    margin: 0 auto
+    padding: 0px 30px 0px 30px
 
   figure
-    margin-bottom: 20px
-    position: relative
+    margin-bottom: 50px
+    position: center
     opacity: 0
     transform: translateX(30px)
     transition: all 0.4s ease-in-out
@@ -292,18 +308,18 @@ body.header-fixed .header-limiter nav button:hover
       figcaption
         left: 0%
 
-      img
-        transform: scale(1.1)
+      //img
+       //transform: scale(1.1)
 
-  figcaption
-    position: absolute
-    bottom: 10px
-    left: -100%
-    background: black
-    color: white
-    padding: 2px 8px
-    font-size: 11px
-    transition: all 0.3s ease-in-out
+  //figcaption
+    //position: absolute
+    //bottom: 10px
+    //left: -100%
+    //background: black
+    //color: white
+    //padding: 2px 8px
+    //font-size: 11px
+    //transition: all 0.3s ease-in-out
 
 
 
@@ -415,15 +431,16 @@ form
 form 
   input, form textarea 
     border: 0
+    text-align: center
     outline: 0
-    padding: 1em
+    padding: 0px 0px 5px 0px
     -moz-border-radius: 8px
     -webkit-border-radius: 8px
     border-radius: 8px
     display: block
     width: 100%
     margin-top: 1em
-    font-family: 'Merriweather', sans-serif
+    font-family: 'Open Sans', sans-serif
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
@@ -438,16 +455,17 @@ form
 form 
   #input-submit 
     color: white
-    background: grey
+    background: black
     cursor: pointer
-    padding: 0px 0px 15px 0px
-    box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px, #d4d4d4 6px 6px, #d4d4d4 7px 7px, #d4d4d4 8px 8px, #d5d5d5 9px 9px
-
+    position: center
+    line-height: 5px
+    font-family: 'Open Sans', sans-serif
+    text-transform: bold
 form 
   #input-submit:hover 
     -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6)
     -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6)
-    box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px, #d4d4d4 6px 6px, #d4d4d4 7px 7px, #d4d4d4 8px 8px, #d5d5d5 9px 9px, #d5d5d5 10px 10px, #d6d6d6 11px 11px, #d6d6d6 12px 12px, #d6d6d6 13px 13px, #d7d7d7 14px 14px, #d7d7d7 15px 15px
+    box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px
 
 form 
   textarea 
@@ -509,14 +527,14 @@ form.cf:after
   text-align: center
   color: white
   border-radius: 10px
-  background: grey
+  background: black
   overflow: hidden
   cursor: pointer
 
 
 .social 
-  box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px, #d4d4d4 6px 6px, #d4d4d4 7px 7px, #d4d4d4 8px 8px, #d5d5d5 9px 9px
-  text-shadow: black 1px 1px, black 2px 2px, black 3px 3px, black 4px 4px, black 5px 5px, black 6px 6px, black 7px 7px, black 8px 8px, black 9px 9px, black 10px 10px, black 11px 11px, black 12px 12px, black 13px 13px, black 14px 14px, black 15px 15px, black 16px 16px, black 17px 17px, black 18px 18px, black 19px 19px, black 20px 20px
+  //box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px, #d4d4d4 6px 6px, #d4d4d4 7px 7px, #d4d4d4 8px 8px, #d5d5d5 9px 9px
+  //text-shadow: black 1px 1px, black 2px 2px, black 3px 3px, black 4px 4px, black 5px 5px, black 6px 6px, black 7px 7px, black 8px 8px, black 9px 9px, black 10px 10px, black 11px 11px, black 12px 12px, black 13px 13px, black 14px 14px, black 15px 15px, black 16px 16px, black 17px 17px, black 18px 18px, black 19px 19px, black 20px 20px
 
 .social:hover
-  box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px, #d4d4d4 6px 6px, #d4d4d4 7px 7px, #d4d4d4 8px 8px, #d5d5d5 9px 9px, #d5d5d5 10px 10px, #d6d6d6 11px 11px, #d6d6d6 12px 12px, #d6d6d6 13px 13px, #d7d7d7 14px 14px, #d7d7d7 15px 15px
+  box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px

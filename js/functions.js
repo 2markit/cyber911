@@ -31,6 +31,24 @@ $(window).scroll(function(){
         $('.grid-pics figure').eq(i).addClass('is-showing');
       }, (700 * (Math.exp(i * 0.14))) - 700);
     });
+  
+//  if(wScroll > $('.grid-pics').offset().top - ($(window).height() / 1.2)) {
+
+    $('.grid-pics figure').each(function(i){
+
+      setTimeout(function(){
+        $('.grid-pics figure').eq(i).addClass('is-showing');
+      }, (700 * (Math.exp(i * 0.14))) - 700);
+    });
+
+//  if(wScroll > $('.grid-pics').offset().top - ($(window).height() / 1.2)) {
+
+    $('.grid-pics figure').each(function(i){
+
+      setTimeout(function(){
+        $('.grid-pics figure').eq(i).addClass('is-showing');
+      }, (700 * (Math.exp(i * 0.14))) - 700);
+    });
 
   
 
