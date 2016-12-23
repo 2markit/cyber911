@@ -1868,7 +1868,7 @@ img {
   margin: 0px 0px 0px 30px; }
 
 .header-fixed .header-limiter h1 span {
-  color: #000055; }
+  color: black; }
 
 .logo img {
   float: left;
@@ -2128,7 +2128,7 @@ body.header-fixed .header-limiter nav a:hover {
     transform: translate(-100px, 20px); }
 
 .contact {
-  margin-bottom: -50px; }
+  margin-bottom: -60px; }
 
 .form {
   width: 100%;
@@ -2171,6 +2171,9 @@ form input:focus, form form textarea:focus {
   -webkit-box-shadow: 0 0px 2px #e74c3c !important;
   box-shadow: 0 0px 2px #e74c3c !important; }
 
+form #input-message {
+  margin-bottom: -10px; }
+
 form #input-submit {
   color: white;
   background: black;
@@ -2198,6 +2201,28 @@ form.right {
 
 form.left {
   margin-right: 2%; }
+
+.submit {
+  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+  padding: 25px 0px 0px 0px;
+  position: center; }
+
+.submit #input-submit {
+  width: 40%;
+  color: white;
+  background: black;
+  cursor: pointer;
+  position: center;
+  line-height: 5px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: bold; }
+
+.submit #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px; }
 
 /* Clearfix */
 form.cf:before,
