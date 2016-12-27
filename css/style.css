@@ -855,27 +855,6 @@ there.
 /* Larger than mobile */
 /* Larger than phablet (also point when grid becomes active) */
 /* Making the header responsive. */
-@media all and (max-width: 600px) {
-  .header-fixed {
-    padding: 20px 0;
-    height: 75px; }
-
-  .header-fixed .header-limiter h1 {
-    float: none;
-    margin: -8px 0 10px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 1; }
-
-  .header-fixed .header-limiter nav {
-    line-height: 1;
-    float: none; }
-
-  .header-fixed .header-limiter nav a {
-    font-size: 13px; }
-
-  body.fixed .header-fixed {
-    display: none; } }
 /* For the headers to look good, be sure to reset the margin and padding of the body */
 body {
   margin: 0;
@@ -883,10 +862,22 @@ body {
 
 @media (max-width: 678px) {
   .para-box {
+    display: none; }
+
+  .para-box-2 {
     display: none; } }
-@media (max-width: 677px) {
-  .header-fixed .header-limiter nav {
-    display: none; } }
+@media (max-width: 815px) {
+  .header-fixed .header-limiter .services {
+    display: none; }
+
+  .header-fixed .header-limiter .about {
+    display: none; }
+
+  .header-fixed .header-limiter .contact {
+    display: none; }
+
+  .header-fixed .header-limiter .phone {
+    display: inline-block; } }
 @media (max-width: 630px) {
   .nav {
     width: 100%; }
@@ -906,10 +897,7 @@ body {
   .header-fixed .header-limiter h1 span {
     position: center;
     text-align: center;
-    margin: 0 auto; }
-
-  .header-fixed-placeholder {
-    display: block; } }
+    margin: 0 auto; } }
 @media (max-width: 440px) {
   .header-fixed .header-limiter .logo img {
     position: center;
@@ -1829,9 +1817,81 @@ hr {
   .content p {
     padding: 0px 30px 0px 30px; }
 
+.content-1 {
+  position: relative;
+  background: #bdbdbd;
+  overflow: hidden; }
+  .content-1 article {
+    padding: 100px 0;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center; }
+  .content-1 p {
+    padding: 0px 30px 0px 30px; }
+
+.content-2 {
+  position: relative;
+  background: white;
+  overflow: hidden; }
+  .content-2 article {
+    padding: 100px 0;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center; }
+  .content-2 p {
+    padding: 0px 30px 0px 30px; }
+
+.content-3 {
+  position: relative;
+  background: white;
+  overflow: hidden; }
+  .content-3 article {
+    padding: 100px 0;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center; }
+  .content-3 p {
+    padding: 0px 30px 0px 30px; }
+
+.content-4 {
+  position: relative;
+  background: #bdbdbd;
+  overflow: hidden; }
+  .content-4 article {
+    padding: 100px 0;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center; }
+  .content-4 p {
+    padding: 0px 30px 0px 30px; }
+
+.content-5 {
+  position: relative;
+  background: white;
+  overflow: hidden; }
+  .content-5 article {
+    padding: 100px 0;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center; }
+  .content-5 p {
+    padding: 0px 30px 0px 30px; }
+
+.content-6 {
+  position: relative;
+  background: #bdbdbd;
+  overflow: hidden; }
+  .content-6 article {
+    padding: 100px 0;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center; }
+  .content-6 p {
+    padding: 0px 30px 0px 30px; }
+
 article {
   padding: 100px 0;
-  max-width: 640px;
+  max-width: 840px;
   margin: 0 auto;
   text-align: center; }
 
@@ -1856,10 +1916,6 @@ img {
 
 /*  The header placeholder. It is displayed when the header is fixed to the top of the
  * browser window, in order to prevent the content of the page from jumping up. */
-.header-fixed-placeholder {
-  height: 80px;
-  display: none; }
-
 /* Logo */
 .header-fixed .header-limiter h1 {
   float: left;
@@ -1913,61 +1969,6 @@ img {
 .header-fixed .header-limiter nav a:hover {
   background-color: #000075;
   color: white;
-  border-radius: 4px;
-  padding: 0px 10px; }
-
-/* Fixed version of the header */
-body.fixed .header-fixed {
-  height: 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1; }
-
-body.fixed .header-fixed-placeholder {
-  display: block; }
-
-body.fixed .header-fixed .header-limiter header {
-  background-color: white;
-  width: 80px; }
-
-body.fixed .header-fixed .header-limiter .logo h1 {
-  display: none;
-  background-color: white;
-  float: left;
-  font-size: 14px;
-  line-height: 108px;
-  margin: 0px 0px 0px 10px; }
-
-body.fixed .header-fixed .header-limiter .logo h1 span {
-  display: none;
-  float: left;
-  font-size: 14px;
-  margin-left: 10px; }
-
-body.fixed .header-fixed .header-limiter .logo nav {
-  background-color: white;
-  padding: 5px 2px 10px 5px;
-  margin-top: 0px;
-  margin-left: -20px;
-  float: left;
-  width: 98px;
-  height: 175px;
-  font-size: 13px;
-  border-radius: 12px; }
-
-body.fixed .header-fixed .header-limiter .logo {
-  float: left;
-  width: 70px;
-  margin-top: 8px;
-  border-radius: 15px; }
-
-body.fixed .header-fixed .header-limiter nav a {
-  font-size: 10px; }
-
-body.header-fixed .header-limiter nav a:hover {
-  background-color: #86a3d5;
-  color: black;
   border-radius: 4px;
   padding: 0px 10px; }
 
@@ -2039,27 +2040,16 @@ body.header-fixed .header-limiter nav a:hover {
 .grid-pics {
   margin: 0 auto;
   position: center;
-  color: white; }
+  color: white;
+  display: block;
+  opacity: 1; }
   .grid-pics p {
     margin: 0 auto;
     padding: 0px 30px 0px 30px; }
   .grid-pics figure {
     margin-bottom: 50px;
     position: center;
-    opacity: 0;
-    transform: translateX(30px);
-    transition: all 0.4s ease-in-out;
-    overflow: hidden;
-    cursor: pointer; }
-    .grid-pics figure.is-showing {
-      opacity: 1;
-      transform: translateX(0px); }
-    .grid-pics figure img {
-      display: block;
-      transform: scale(1);
-      transition: all 0.3s ease-in-out; }
-    .grid-pics figure:hover figcaption {
-      left: 0%; }
+    overflow: hidden; }
 
 .large-window {
   height: 400px;
@@ -2176,12 +2166,13 @@ form #input-message {
 
 form #input-submit {
   color: white;
-  background: black;
+  background: #bdbdbd;
   cursor: pointer;
   position: center;
   line-height: 5px;
   font-family: "Open Sans", sans-serif;
-  text-transform: bold; }
+  text-transform: bold;
+  padding: 0px 0px 50px 0px; }
 
 form #input-submit:hover {
   -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
@@ -2238,14 +2229,16 @@ form.cf:after {
 .wrapper {
   margin: 0;
   padding: 0;
+  height: 80px;
+  position: bottom;
   box-sizing: border-box;
-  background-color: white; }
+  background-color: black; }
 
 .wrapper body {
-  background: #ddd; }
+  background: white; }
 
 .wrapper {
-  padding: 120px 0 0;
+  line-height: 125px;
   text-align: center; }
 
 .social {
@@ -2259,12 +2252,9 @@ form.cf:after {
   text-align: center;
   color: white;
   border-radius: 10px;
-  background: black;
+    border-radius-color: white;
   overflow: hidden;
   cursor: pointer;
   background-color: black; }
-
-.social:hover {
-  box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px; }
 
 /*# sourceMappingURL=style.css.map */

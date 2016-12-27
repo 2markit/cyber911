@@ -410,35 +410,7 @@ there.
 
 /* Making the header responsive. */
 
-@media all and (max-width: 600px) {
 
-  .header-fixed {
-    padding: 20px 0;
-    height: 75px;
-  }
-
-  .header-fixed .header-limiter h1 {
-    float: none;
-    margin: -8px 0 10px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 1;
-  }
-
-  .header-fixed .header-limiter nav {
-    line-height: 1;
-    float:none;
-  }
-
-  .header-fixed .header-limiter nav a {
-    font-size: 13px;
-  }
-
-  body.fixed .header-fixed {
-    display: none;
-  }
-
-}
 
 /* For the headers to look good, be sure to reset the margin and padding of the body */
 
@@ -451,11 +423,23 @@ body {
   .para-box {
     display: none;
   }
+  .para-box-2 {
+    display: none;
+  }
 }
 
-@media (max-width: 677px) {
-  .header-fixed .header-limiter nav {
+@media (max-width: 815px) {
+  .header-fixed .header-limiter .services {
     display: none;
+  }
+    .header-fixed .header-limiter .about {
+    display: none;
+  }
+    .header-fixed .header-limiter .contact {
+    display: none;
+  }
+  .header-fixed .header-limiter .phone {
+    display: inline-block;
   }
 }
 
@@ -479,10 +463,7 @@ body {
     position: center;
     text-align: center;
     margin: 0 auto;
-  }
-  .header-fixed-placeholder {
-    display: block;
-  }  
+  } 
 }
 
 @media (max-width: 440px) {
