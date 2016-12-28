@@ -1,4 +1,5 @@
 var pContainerHeight = $('.para-box').height();
+var pContainersHeight = $('.para-box-2').height();
 
 $(window).scroll(function(){
 
@@ -7,6 +8,26 @@ $(window).scroll(function(){
   if (wScroll <= pContainerHeight) {
 
     $('.para-text').css({
+      'transform' : 'translate(0px, '+ wScroll /2 +'%)'
+    });
+
+    $('.back-ground').css({
+      'transform' : 'translate(0px, -'+ wScroll /4 +'%)'
+    });
+
+    $('.fore-ground').css({
+      'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
+    });
+
+  }
+
+$(window).scroll(function(){
+
+  var wScroll = $(this).scrollTop();
+
+  if (wScroll <= pContainersHeight) {
+
+    $('.image').css({
       'transform' : 'translate(0px, '+ wScroll /2 +'%)'
     });
 
@@ -76,7 +97,7 @@ $(window).scroll(function(){
     $('.post-3').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.2) +'px)'});
 
   }
-}
+});
 
 
 
@@ -106,7 +127,4 @@ $(document).ready(function(){
       });
 
     }
-
-  }
-);
 });
