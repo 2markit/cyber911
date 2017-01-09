@@ -29,7 +29,7 @@ hr {
 
 .content {
   height: 480px;
-  background-image: linear-gradient(-90deg, rgba(244, 245, 247, 0.275) 0%, rgba(244, 245, 247, 0.275) 5%, rgba(244, 245, 247, 0.35) 10%, rgba(244, 245, 247, 0.5) 15%, rgba(244, 245, 247, 0.65) 20%, rgba(244, 245, 247, 0.7) 30%, rgba(244, 245, 247, 0.85) 50%, rgba(244, 245, 247, 0.975) 100%), url(../images/building-bg.jpg);
+  background-image: linear-gradient(-90deg, rgba(244, 245, 247, 0.175) 0%, rgba(244, 245, 247, 0.175) 5%, rgba(244, 245, 247, 0.2) 10%, rgba(244, 245, 247, 0.3) 15%, rgba(244, 245, 247, 0.4) 20%, rgba(244, 245, 247, 0.5) 30%, rgba(244, 245, 247, 0.85) 60%, rgba(244, 245, 247, 0.975) 100%), url(../images/building-bg.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   overflow: hidden; }
@@ -52,7 +52,7 @@ hr {
 .content-1 {
   position: relative;
   height: 450px;
-  background-image: linear-gradient(90deg, rgba(212, 226, 249, 0.275) 0%, rgba(212, 226, 249, 0.275) 5%, rgba(212, 226, 249, 0.35) 10%, rgba(212, 226, 249, 0.5) 15%, rgba(212, 226, 249, 0.65) 20%, rgba(212, 226, 249, 0.7) 30%, rgba(212, 226, 249, 0.85) 50%, rgba(212, 226, 249, 0.975) 100%), url(../images/light-bg.jpg);
+  background-image: linear-gradient(90deg, rgba(244, 245, 247, 0.175) 0%, rgba(244, 245, 247, 0.175) 5%, rgba(244, 245, 247, 0.2) 10%, rgba(244, 245, 247, 0.3) 15%, rgba(244, 245, 247, 0.4) 20%, rgba(244, 245, 247, 0.5) 30%, rgba(244, 245, 247, 0.85) 60%, rgba(244, 245, 247, 0.975) 100%), url(../images/abstract-blue.png);
   background-position: bottom center;
   background-repeat: no-repeat;
   overflow: hidden; }
@@ -75,7 +75,7 @@ hr {
 .content-2 {
   position: relative;
   height: 450px;
-  background-image: linear-gradient(-90deg, rgba(244, 245, 247, 0.275) 0%, rgba(244, 245, 247, 0.275) 5%, rgba(244, 245, 247, 0.35) 10%, rgba(244, 245, 247, 0.5) 15%, rgba(244, 245, 247, 0.65) 20%, rgba(244, 245, 247, 0.7) 30%, rgba(244, 245, 247, 0.85) 50%, rgba(244, 245, 247, 0.975) 100%), url(../images/abstract-blue.png);
+  background-image: linear-gradient(-90deg, rgba(244, 245, 247, 0.175) 0%, rgba(244, 245, 247, 0.175) 5%, rgba(244, 245, 247, 0.2) 10%, rgba(244, 245, 247, 0.3) 15%, rgba(244, 245, 247, 0.4) 20%, rgba(244, 245, 247, 0.5) 30%, rgba(244, 245, 247, 0.85) 60%, rgba(244, 245, 247, 0.975) 100%), url(../images/light-bg.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   overflow: hidden; }
@@ -98,7 +98,7 @@ hr {
 .content-3 {
   position: relative;
   height: 450px;
-  background-image: linear-gradient(90deg, rgba(212, 226, 249, 0.275) 0%, rgba(212, 226, 249, 0.275) 5%, rgba(212, 226, 249, 0.35) 10%, rgba(212, 226, 249, 0.5) 15%, rgba(212, 226, 249, 0.65) 20%, rgba(212, 226, 249, 0.7) 30%, rgba(212, 226, 249, 0.85) 50%, rgba(212, 226, 249, 0.975) 100%), url(../images/apple-laptop.jpg);
+  background-image: linear-gradient(90deg, rgba(244, 245, 247, 0.175) 0%, rgba(244, 245, 247, 0.175) 5%, rgba(244, 245, 247, 0.2) 10%, rgba(244, 245, 247, 0.3) 15%, rgba(244, 245, 247, 0.4) 20%, rgba(244, 245, 247, 0.5) 30%, rgba(244, 245, 247, 0.85) 60%, rgba(244, 245, 247, 0.975) 100%), url(../images/abstract-blue.png);
   background-position: bottom center;
   background-repeat: no-repeat;
   overflow: hidden; }
@@ -123,7 +123,7 @@ hr {
   height: 450px;
   margin: 0 auto;
   padding: 0;
-  background-image: linear-gradient(-90deg, rgba(244, 245, 247, 0.275) 0%, rgba(244, 245, 247, 0.275) 5%, rgba(244, 245, 247, 0.35) 10%, rgba(244, 245, 247, 0.5) 15%, rgba(244, 245, 247, 0.65) 20%, rgba(244, 245, 247, 0.7) 30%, rgba(244, 245, 247, 0.85) 50%, rgba(244, 245, 247, 0.975) 100%), url(../images/abstract-blue.png);
+  background-image: linear-gradient(-90deg, rgba(244, 245, 247, 0.175) 0%, rgba(244, 245, 247, 0.175) 5%, rgba(244, 245, 247, 0.2) 10%, rgba(244, 245, 247, 0.3) 15%, rgba(244, 245, 247, 0.4) 20%, rgba(244, 245, 247, 0.5) 30%, rgba(244, 245, 247, 0.85) 60%, rgba(244, 245, 247, 0.975) 100%), url(../images/apple-laptop.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   overflow: hidden; }
@@ -146,7 +146,7 @@ hr {
 .content-5 {
   position: relative;
   height: 450px;
-  background-image: linear-gradient(90deg, rgba(212, 226, 249, 0.275) 0%, rgba(212, 226, 249, 0.275) 5%, rgba(212, 226, 249, 0.35) 10%, rgba(212, 226, 249, 0.5) 15%, rgba(212, 226, 249, 0.65) 20%, rgba(212, 226, 249, 0.7) 30%, rgba(212, 226, 249, 0.85) 50%, rgba(212, 226, 249, 0.975) 100%), url(../images/computer-repair.jpg);
+  background-image: linear-gradient(90deg, rgba(244, 245, 247, 0.175) 0%, rgba(244, 245, 247, 0.175) 5%, rgba(244, 245, 247, 0.2) 10%, rgba(244, 245, 247, 0.3) 15%, rgba(244, 245, 247, 0.4) 20%, rgba(244, 245, 247, 0.5) 30%, rgba(244, 245, 247, 0.85) 60%, rgba(244, 245, 247, 0.975) 100%), url(../images/abstract-green.png);
   background-position: bottom center;
   background-repeat: no-repeat;
   overflow: hidden; }
@@ -169,7 +169,7 @@ hr {
 .content-6 {
   position: relative;
   height: 450px;
-  background-image: linear-gradient(-90deg, rgba(244, 245, 247, 0.275) 0%, rgba(244, 245, 247, 0.275) 5%, rgba(244, 245, 247, 0.35) 10%, rgba(244, 245, 247, 0.5) 15%, rgba(244, 245, 247, 0.65) 20%, rgba(244, 245, 247, 0.7) 30%, rgba(244, 245, 247, 0.85) 50%, rgba(244, 245, 247, 0.975) 100%), url(../images/abstract-green.png);
+  background-image: linear-gradient(-90deg, rgba(244, 245, 247, 0.175) 0%, rgba(244, 245, 247, 0.175) 5%, rgba(244, 245, 247, 0.2) 10%, rgba(244, 245, 247, 0.3) 15%, rgba(244, 245, 247, 0.4) 20%, rgba(244, 245, 247, 0.5) 30%, rgba(244, 245, 247, 0.85) 60%, rgba(244, 245, 247, 0.975) 100%), url(../images/computer-repair.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   overflow: hidden; }
