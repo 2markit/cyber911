@@ -9,16 +9,7 @@ $(window).scroll(function(){
     $('.para-text').css({
       'transform' : 'translate(0px, '+ wScroll /2 +'%)'
     });
-
-    $('.back-ground').css({
-      'transform' : 'translate(0px, '+ wScroll /4 +'%)'
-    });
-
-    $('.fore-ground').css({
-      'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
-    });
-
-  }
+}
 
 
 
@@ -32,19 +23,8 @@ $(window).scroll(function(){
       }, (700 * (Math.exp(i * 0.14))) - 700);
     });
 
-  
 
 
-  // Promoscope
-  if(wScroll > $('.large-window').offset().top - $(window).height()){
-
-    $('.large-window').css({'background-position':'center '+ (wScroll - $('.large-window').offset().top) +'px'});
-
-    var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 5);
-
-    $('.window-tint').css({'opacity': opacity});
-
-  }
 
 
   // Floating Elements
@@ -59,63 +39,37 @@ $(window).scroll(function(){
 
   }
 };
-
-
-
-
-$(document).ready(function(){
-
-    var showHeaderAt = 150;
-
-    var win = $(window),
-        body = $('body');
-
-    // Show the fixed header only on larger screen devices
-
-    if(win.width() > 600){
-
-      // When we scroll more than 150px down, we set the
-      // "fixed" class on the body element.
-
-      win.on('scroll', function(e){
-
-        if(win.scrollTop() > showHeaderAt) {
-          body.addClass('fixed');
-        }
-        else {
-          body.removeClass('fixed');
-        }
-      });
-
-    }
-
-  });
-
-
-
-  // Scroll to element
-
-$(document).ready(function (){
-            $("#menu-1").selected(function (){
-                $('html, body').animate({
-                    scrollTop: $("#services").offset().top
-                }, 2000);
-            });
-        });
-
-$(document).ready(function (){
-            $("#click").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#div1").offset().top
-                }, 2000);
-            });
-        });
-
-$(document).ready(function (){
-            $("#click").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#div1").offset().top
-                }, 2000);
-            });
-        });
+// Scroll to specific values
+// scrollTo is the same
+window.scroll({
+  top: 2500,
+  left: 0,
+  behavior: 'smooth'
 });
+
+// Scroll certain amounts from current position
+window.scrollBy({
+  top: 100, // could be negative value
+  left: 0,
+  behavior: 'smooth'
+});
+
+// Scroll to a certain element
+document.querySelector('.hello').scrollIntoView({
+  behavior: 'smooth'
+});
+  // Scroll to element
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });

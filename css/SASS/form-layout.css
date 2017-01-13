@@ -1,0 +1,136 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+* {
+  font-family: "Open Sans", sans-serif; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #373D3F;
+  font-weight: 300;
+  padding: 0px 30px 0px 30px; }
+
+a {
+  color: #373D3F;
+  text-decoration: none; }
+
+p {
+  color: #373D3F;
+  text-decoration: none; }
+
+figure {
+  margin: auto; }
+
+hr {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  width: 300px; }
+
+.form {
+  width: 100%;
+  background-color: #3f3f3f;
+  text-align: center; }
+  .form html body {
+    font-family: "Open Sans", sans-serif;
+    padding: 1em;
+    text-align: center; }
+
+form h1 {
+  text-align: center;
+  color: #a8a8a8;
+  text-shadow: 1px 1px 0 white; }
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto; }
+
+form input, form form textarea {
+  border: 0;
+  text-align: center;
+  outline: 0;
+  padding: 0px 0px 5px 0px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: "Open Sans", sans-serif;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none; }
+
+form input:focus, form form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #e74c3c !important;
+  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+  box-shadow: 0 0px 2px #e74c3c !important; }
+
+form #input-message {
+  margin-bottom: -10px; }
+
+form #input-submit {
+  color: white;
+  background: #bdbdbd;
+  cursor: pointer;
+  position: center;
+  line-height: 5px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: bold;
+  padding: 0px 0px 50px 0px; }
+
+form #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px; }
+
+form textarea {
+  height: 126px; }
+
+form.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em; }
+
+form.right {
+  width: 50%; }
+
+form.left {
+  margin-right: 2%; }
+
+.submit {
+  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+  padding: 25px 0px 0px 0px;
+  position: center; }
+
+.submit #input-submit {
+  width: 40%;
+  color: white;
+  background: #3f3f3f;
+  cursor: pointer;
+  position: center;
+  line-height: 5px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: bold; }
+
+.submit #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px; }
+
+/* Clearfix */
+form.cf:before,
+form.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+form.cf:after {
+  clear: both; }
+
+/*# sourceMappingURL=form-layout.css.map */
