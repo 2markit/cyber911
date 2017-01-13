@@ -25,51 +25,17 @@ $(window).scroll(function(){
 
 
 
+// Scroll to element
 
-
-  // Floating Elements
-
-  if(wScroll > $('.blog-posts').offset().top - $(window).height()){
-
-    var offset = (Math.min(0, wScroll - $('.blog-posts').offset().top +$(window).height() - 350)).toFixed();
-
-    $('.post-1').css({'transform': 'translate('+ offset +'px, '+ Math.abs(offset * 0.2) +'px)'});
-
-    $('.post-3').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.2) +'px)'});
-
+$('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
   }
-};
-// Scroll to specific values
-// scrollTo is the same
-window.scroll({
-  top: 2500,
-  left: 0,
-  behavior: 'smooth'
 });
-
-// Scroll certain amounts from current position
-window.scrollBy({
-  top: 100, // could be negative value
-  left: 0,
-  behavior: 'smooth'
-});
-
-// Scroll to a certain element
-document.querySelector('.hello').scrollIntoView({
-  behavior: 'smooth'
-});
-  // Scroll to element
-  $(function() {
-    $('a[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });

@@ -168,13 +168,38 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 
+* {
+  font-family: "Open Sans", sans-serif; }
+
 body {
   font-size: 1.5em;
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: "Open Sans", sans-serif;
+  color: #373D3F; }
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #373D3F;
+  font-weight: 300;
+  padding: 0px 30px 0px 30px; }
+
+a {
+  color: #373D3F;
+  text-decoration: none; }
+
+p {
+  color: #373D3F;
+  text-decoration: none; }
+
+figure {
+  margin: auto; }
+
+hr {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  width: 300px; }
 
 .radial {
   background: -moz-radial-gradient(center, circle cover, #555A5F 0%, #000 100%);
@@ -513,48 +538,56 @@ body {
   margin: 0;
   padding: 0; }
 
-@media (max-width: 678px) {
+@media (max-width: 415px) {
+  .content-1 p {
+    margin-bottom: 25px; } }
+@media (max-width: 500px) {
+  .header-fixed nav .services {
+    display: none; }
+
+  .header-fixed nav .about {
+    display: none; }
+
+  .header-fixed nav .contact {
+    display: none; } }
+@media (max-width: 638px) {
+  .header-fixed .phone-number {
+    display: none; }
+
+  .header-fixed .title {
+    display: none; } }
+@media (max-width: 700px) {
   .para-box {
+    display: none; } }
+@media (max-width: 850px) {
+  .content-footer {
+    height: 175px;
+    margin-bottom: 0px;
+    padding-bottom: 10px; }
+
+  .content-footer .wrapper .social {
+    display: inline-block; }
+
+  .content-footer .wrapper {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    margin-left: 5px; } }
+@media (max-width: 880px) {
+  .para-box {
+    height: 300px; }
+
+  .header-fixed .title {
+    display: none; } }
+@media (max-width: 915px) {
+  .content-icon {
     display: none; }
 
   .para-box-2 {
     display: none; } }
-@media (max-width: 815px) {
-  .header-fixed .header-limiter .services {
-    display: none; }
-
-  .header-fixed .header-limiter .about {
-    display: none; }
-
-  .header-fixed .header-limiter .contact {
-    display: none; }
-
-  .header-fixed .header-limiter .phone {
-    display: inline-block; } }
-@media (max-width: 630px) {
-  .nav {
-    width: 100%; }
-
-  .nav-item {
-    width: 100%;
-    float: none; }
-
-  .header-fixed .header-limiter {
-    width: 100%; }
-
-  .header-fixed {
-    display: inline-block;
-    height: 60px;
-    width: 100%; }
-
-  .header-fixed .header-limiter h1 span {
-    position: center;
-    text-align: center;
-    margin: 0 auto; } }
-@media (max-width: 440px) {
-  .header-fixed .header-limiter .logo img {
-    position: center;
-    margin: 0 auto; } }
+@media (max-width: 1000px) {
+  .para-box {
+    height: 350px;
+    background-image: url(../images/hdd-bg.png); } }
 @media (max-width: 480px) {
   .half {
     width: 100%;
