@@ -4103,14 +4103,39 @@ body {
 
 .header-fixed nav {
   font: 15px Arial, Helvetica, sans-serif;
-  height: 75px;
-  line-height: 75px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   float: right; }
 
-.header-fixed nav .services {
-  display: inline-block;
+.clearfix:after {
+  display: block;
+  clear: both; }
+
+.clearfix::before {
+  display: block;
+  clear: both; }
+
+/*----- Menu Outline ----- */
+.menu-wrap {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.menu {
+  font: 15px Arial, Helvetica, sans-serif;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  height: 30px;
+  line-height: 30px;
+  float: right; }
+
+.menu li {
+  margin: 0px 0px 0px 0px;
+  height: 30px;
+  line-height: 30px;
+  list-style: none; }
+
+.menu a {
+  transition: all linear 0.15s;
   margin: 0px 0px 0px 0px;
   padding: 0px 10px 5px 10px;
   color: #373D3F;
@@ -4128,9 +4153,116 @@ body {
   cursor: pointer;
   box-sizing: border-box; }
 
-.header-fixed nav .about {
-  display: inline-block;
+.menu li:hover > a, .menu .current-item > a {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+/*----- Top Level ----- */
+.menu > ul > li {
+  float: left;
+  display: inline-block; }
+
+.menu > ul > li > a {
+  padding: 10px 40px;
+  display: inline-block; }
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+  background-color: rgba(255, 255, 255, 0.9); }
+
+/*----- Bottom Level ----- */
+.menu li:hover .sub-menu {
+  visibility: visible; }
+
+.drop-menu:hover .sub-menu {
+  visibility: visible; }
+
+.sub-menu {
+  width: 300px;
+  height: 185px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 4px;
+  position: absolute;
+  top: 50px;
+  visibility: hidden;
+  text-align: center;
+  transition: opacity linear 0.15s;
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 0px 0px 0px 0px;
+  float: right; }
+
+.sub-menu li {
+  display: block;
+  width: 150px;
+  text-align: center; }
+
+.sub-menu li a {
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  line-height: 12px;
+  display: block;
+  text-align: center; }
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center; }
+
+.sub-menu .clean-up:hover {
+  background-color: #000075;
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  transition: opacity linear 0.15s; }
+
+.sub-menu .repair:hover {
+  background-color: #000075;
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  transition: opacity linear 0.15s; }
+
+.sub-menu .pick-up:hover {
+  background-color: #000075;
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  transition: opacity linear 0.15s; }
+
+.sub-menu .in-home:hover {
+  background-color: #000075;
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  transition: opacity linear 0.15s; }
+
+.sub-menu .data:hover {
+  background-color: #000075;
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  transition: opacity linear 0.15s; }
+
+.sub-menu .remote:hover {
+  background-color: #000075;
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  transition: opacity linear 0.15s; }
+
+.header-fixed nav .services {
+  display: inline-block;
+  margin: 22.5px 0px 0px 0px;
   padding: 0px 10px 5px 10px;
   color: #373D3F;
   height: 30px;
@@ -4149,7 +4281,7 @@ body {
 
 .header-fixed nav .contact {
   display: inline-block;
-  margin: 0px 5px 0px 0px;
+  margin: 22.5px 5px 0px 0px;
   padding: 0px 10px 5px 10px;
   color: #373D3F;
   height: 30px;
@@ -4177,17 +4309,7 @@ body {
   background-color: #000075;
   color: white;
   border-radius: 4px;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 10px 10px 10px;
-  height: 30px;
-  line-height: 30px;
-  letter-spacing: 0.1rem; }
-
-.header-fixed nav .about:hover {
-  background-color: #000075;
-  color: white;
-  border-radius: 4px;
-  margin: 0px 0px 0px 0px;
+  margin: 22.5px 0px 0px 0px;
   padding: 0px 10px 10px 10px;
   height: 30px;
   line-height: 30px;
@@ -4197,31 +4319,28 @@ body {
   background-color: #000075;
   color: white;
   border-radius: 4px;
-  margin: 0px 5px 0px 0px;
+  margin: 22.5px 5px 0px 0px;
   padding: 0px 10px 10px 10px;
   height: 30px;
   line-height: 30px;
   letter-spacing: 0.1rem; }
 
-.phone-number:hover {
+.phone:hover {
   background-color: #000075;
   color: white;
   border-radius: 4px;
+  height: 40px;
+  line-height: 36px;
+  margin-top: 19px;
   padding: 0px 3px 0px 7px; }
 
 .phone {
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 15px 0px;
-  height: 75px;
-  line-height: 75px; }
-
-.phone-number {
   display: inline-block;
   padding: 0px 5px 0px 5px;
   margin: 0px 0px 10px 3px;
   color: #373D3F;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0.1rem;
@@ -4230,8 +4349,10 @@ body {
 
 .phone-icon {
   height: 25px;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px -7px 0px; }
+  line-height: 25px;
+  padding: 22px 0px 0px 0px;
+  margin: 0px 0px -7px 0px;
+  float: left; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -6268,7 +6389,8 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 0; }
 
 .para-box-2 {
   position: relative;
@@ -8354,7 +8476,8 @@ body {
   background-image: linear-gradient(-90deg, rgba(244, 245, 247, 0.175) 0%, rgba(244, 245, 247, 0.175) 5%, rgba(244, 245, 247, 0.2) 10%, rgba(244, 245, 247, 0.3) 15%, rgba(244, 245, 247, 0.4) 20%, rgba(244, 245, 247, 0.5) 30%, rgba(244, 245, 247, 0.85) 60%, rgba(244, 245, 247, 0.975) 100%), url(../images/building-bg.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 0; }
   .content-1 article {
     padding: 100px 50px 100px 50px;
     max-width: 840px;
@@ -14741,10 +14864,59 @@ body {
   font-weight: 300;
   src: local("Open Sans Light"), local("OpenSans-Light"), url(../css/fonts/OpenSansLight.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-.form {
+.content-contact {
+  position: relative;
   width: 100%;
-  background-color: #3f3f3f;
+  height: 450px;
+  background-image: linear-gradient(90deg, rgba(244, 245, 247, 0.175) 0%, rgba(244, 245, 247, 0.175) 5%, rgba(244, 245, 247, 0.2) 10%, rgba(244, 245, 247, 0.3) 15%, rgba(244, 245, 247, 0.4) 20%, rgba(244, 245, 247, 0.5) 30%, rgba(244, 245, 247, 0.85) 60%, rgba(244, 245, 247, 0.975) 100%), url(../images/abstract-blue.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  overflow: hidden;
   text-align: center; }
+  .content-contact article {
+    padding: 100px 100px 100px 100px;
+    margin: 0 auto;
+    margin-top: 75px;
+    text-align: center;
+    max-width: 600px; }
+  .content-contact h1 {
+    font-weight: 580;
+    color: #373D3F;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    max-width: 600px; }
+  .content-contact p {
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    max-width: 600px;
+    font-weight: 250;
+    color: #373D3F; }
+
+.form {
+  position: relative;
+  width: 100%;
+  height: 570px;
+  text-align: center;
+  background-color: #fff;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  .form article {
+    padding: 50px 50px 50px 50px;
+    max-width: 840px;
+    margin: 0 auto; }
+  .form h1 {
+    font-weight: 580;
+    color: #373D3F;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    max-width: 640px; }
+  .form p {
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    max-width: 640px;
+    font-weight: 250;
+    color: #373D3F; }
   .form html body {
     font-family: "Open Sans", sans-serif;
     padding: 1em;
@@ -14758,7 +14930,9 @@ form h1 {
 form {
   max-width: 600px;
   text-align: center;
-  margin: 20px auto; }
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: hidden; }
 
 form input, form form textarea {
   border: 0;
@@ -14770,7 +14944,7 @@ form input, form form textarea {
   border-radius: 8px;
   display: block;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 2em;
   font-family: "Open Sans", sans-serif;
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -14783,7 +14957,9 @@ form input:focus, form form textarea:focus {
   box-shadow: 0 0px 2px #e74c3c !important; }
 
 form #input-message {
-  margin-bottom: -10px; }
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 0.2em; }
 
 form #input-submit {
   color: white;
@@ -14816,12 +14992,12 @@ form.left {
 
 .submit {
   margin: 0 auto;
-  background-color: white;
   width: 100%;
-  padding: 25px 0px 0px 0px;
+  padding: 25px 0px 25px 0px;
   position: center; }
 
 .submit #input-submit {
+  margin: 0 auto;
   width: 40%;
   color: white;
   background: #3f3f3f;
@@ -14830,11 +15006,6 @@ form.left {
   line-height: 5px;
   font-family: "Open Sans", sans-serif;
   text-transform: bold; }
-
-.submit #input-submit:hover {
-  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px; }
 
 /* Clearfix */
 form.cf:before,
