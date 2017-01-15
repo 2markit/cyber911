@@ -889,9 +889,156 @@ body {
   margin: 0;
   padding: 0; }
 
-@media (max-width: 415px) {
+@media (max-width: 460px) {
+  .content-1 {
+    height: 350px; }
+
+  .content-1 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-1 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3rem; }
+
   .content-1 p {
-    margin-bottom: 25px; } }
+    padding: 0px 3px 0px 3px; }
+
+  .content-2 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-2 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3rem; }
+
+  .content-2 p {
+    padding: 0px 3px 0px 3px; }
+
+  .content-3 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-3 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3rem; }
+
+  .content-3 p {
+    padding: 0px 3px 0px 3px; }
+
+  .content-4 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-4 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3rem; }
+
+  .content-4 p {
+    padding: 0px 3px 0px 3px; }
+
+  .content-5 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-5 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3rem; }
+
+  .content-5 p {
+    padding: 0px 3px 0px 3px; }
+
+  .content-6 {
+    height: 375px; }
+
+  .content-6 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-6 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3rem; }
+
+  .content-6 p {
+    padding: 0px 3px 0px 3px; }
+
+  .content-7 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-7 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3rem; }
+
+  .content-7 p {
+    padding: 0px 3px 0px 3px; } }
+@media (max-width: 487px) {
+  .content-1 {
+    height: 325px; }
+
+  .content-1 article {
+    padding: 25px 50px 25px 50px; }
+
+  .content-1 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3.2rem; }
+
+  .content-1 p {
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 0px; }
+
+  .content-2 article {
+    padding: 25px 50px 25px 50px; }
+
+  .content-2 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3.2rem; }
+
+  .content-2 p {
+    padding: 0px 10px 0px 10px; }
+
+  .content-3 article {
+    padding: 25px 50px 25px 50px; }
+
+  .content-3 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3.2rem; }
+
+  .content-3 p {
+    padding: 0px 10px 0px 10px; }
+
+  .content-4 article {
+    padding: 25px 50px 25px 50px; }
+
+  .content-4 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3.2rem; }
+
+  .content-4 p {
+    padding: 0px 10px 0px 10px; }
+
+  .content-5 article {
+    padding: 25px 50px 25px 50px; }
+
+  .content-5 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3.2rem; }
+
+  .content-5 p {
+    padding: 0px 10px 0px 10px; }
+
+  .content-6 article {
+    padding: 25px 50px 25px 50px; }
+
+  .content-6 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3.2rem; }
+
+  .content-6 p {
+    padding: 0px 10px 0px 10px; }
+
+  .content-7 article {
+    padding: 25px 50px 25px 50px; }
+
+  .content-7 h1 {
+    padding: 0px 10px 0px 10px;
+    font-size: 3.2rem; }
+
+  .content-7 p {
+    padding: 0px 10px 0px 10px; } }
 @media (max-width: 500px) {
   .header-fixed nav .services {
     display: none; }
@@ -901,12 +1048,73 @@ body {
 
   .header-fixed nav .contact {
     display: none; } }
+@media only screen and (min-width: 532px) and (max-width: 549px) {
+  .content-6 {
+    height: 386px; }
+
+  .content-7 {
+    height: 381px; } }
+@media only screen and (min-width: 550px) and (max-width: 599px) {
+  .content-6 {
+    height: 410px; }
+
+  .content-7 {
+    height: 445px; } }
+@media only screen and (min-width: 487px) and (max-width: 631px) {
+  .content-6 {
+    height: 390px; }
+
+  .content-7 {
+    height: 425px; } }
 @media (max-width: 638px) {
   .header-fixed .phone-number {
     display: none; }
 
   .header-fixed .title {
     display: none; } }
+@media only screen and (min-width: 631px) and (max-width: 700px) {
+  .content-7 {
+    height: 365px; } }
+@media (max-width: 700px) {
+  .content-1 {
+    margin-top: 75px;
+    height: 400px; }
+
+  .content-1 article {
+    padding: 85px 50px 50px 50px; }
+
+  .content-2 {
+    height: 330px; }
+
+  .content-2 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-3 {
+    height: 330px; }
+
+  .content-3 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-4 {
+    height: 330px; }
+
+  .content-4 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-5 {
+    height: 330px; }
+
+  .content-5 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-6 {
+    height: 390px; }
+
+  .content-6 article {
+    padding: 50px 50px 50px 50px; }
+
+  .content-7 article {
+    padding: 50px 50px 50px 50px; } }
 @media (max-width: 700px) {
   .para-box {
     display: none; } }
@@ -932,7 +1140,7 @@ body {
 
   .header-fixed .title {
     display: none; } }
-@media (max-width: 915px) {
+@media (max-width: 930px) {
   .content-icon {
     display: none; }
 
@@ -1817,10 +2025,59 @@ body {
   font-weight: 300;
   src: local("Open Sans Light"), local("OpenSans-Light"), url(../css/fonts/OpenSansLight.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-.form {
+.content-contact {
+  position: relative;
   width: 100%;
-  background-color: #3f3f3f;
+  height: 450px;
+  background-image: linear-gradient(90deg, rgba(244, 245, 247, 0.175) 0%, rgba(244, 245, 247, 0.175) 5%, rgba(244, 245, 247, 0.2) 10%, rgba(244, 245, 247, 0.3) 15%, rgba(244, 245, 247, 0.4) 20%, rgba(244, 245, 247, 0.5) 30%, rgba(244, 245, 247, 0.85) 60%, rgba(244, 245, 247, 0.975) 100%), url(../images/abstract-blue.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  overflow: hidden;
   text-align: center; }
+  .content-contact article {
+    padding: 100px 100px 100px 100px;
+    margin: 0 auto;
+    margin-top: 75px;
+    text-align: center;
+    max-width: 600px; }
+  .content-contact h1 {
+    font-weight: 580;
+    color: #373D3F;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    max-width: 600px; }
+  .content-contact p {
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    max-width: 600px;
+    font-weight: 250;
+    color: #373D3F; }
+
+.form {
+  position: relative;
+  width: 100%;
+  height: 570px;
+  text-align: center;
+  background-color: #fff;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  .form article {
+    padding: 50px 50px 50px 50px;
+    max-width: 840px;
+    margin: 0 auto; }
+  .form h1 {
+    font-weight: 580;
+    color: #373D3F;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    max-width: 640px; }
+  .form p {
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    max-width: 640px;
+    font-weight: 250;
+    color: #373D3F; }
   .form html body {
     font-family: "Open Sans", sans-serif;
     padding: 1em;
@@ -1834,7 +2091,9 @@ form h1 {
 form {
   max-width: 600px;
   text-align: center;
-  margin: 20px auto; }
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: hidden; }
 
 form input, form form textarea {
   border: 0;
@@ -1846,7 +2105,7 @@ form input, form form textarea {
   border-radius: 8px;
   display: block;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 2em;
   font-family: "Open Sans", sans-serif;
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -1859,7 +2118,9 @@ form input:focus, form form textarea:focus {
   box-shadow: 0 0px 2px #e74c3c !important; }
 
 form #input-message {
-  margin-bottom: -10px; }
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 0.2em; }
 
 form #input-submit {
   color: white;
@@ -1892,12 +2153,12 @@ form.left {
 
 .submit {
   margin: 0 auto;
-  background-color: white;
   width: 100%;
-  padding: 25px 0px 0px 0px;
+  padding: 25px 0px 25px 0px;
   position: center; }
 
 .submit #input-submit {
+  margin: 0 auto;
   width: 40%;
   color: white;
   background: #3f3f3f;
@@ -1906,11 +2167,6 @@ form.left {
   line-height: 5px;
   font-family: "Open Sans", sans-serif;
   text-transform: bold; }
-
-.submit #input-submit:hover {
-  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px; }
 
 /* Clearfix */
 form.cf:before,

@@ -1,14 +1,70 @@
 @import normalize
 @import skeleton
 @import fonts
-// Form
 
 @import url(http://fonts.googleapis.com/css?family=Merriweather)
 
-.form
+
+//  Contact Us
+.content-contact
+  position: relative
   width: 100%
-  background-color: #3f3f3f
+  height: 450px
+  background:
+    image: (linear-gradient(90deg, rgba(244, 245, 247, .175) 0%, rgba(244, 245, 247,.175) 5%, rgba(244, 245, 247, .200) 10%,  rgba(244, 245, 247, .300) 15%,  rgba(244, 245, 247, .400) 20%, rgba(244, 245, 247,.500) 30%,  rgba(244, 245, 247, .850) 60%,  rgba(244, 245, 247, .975) 100%), url(../images/abstract-blue.png))
+    position: bottom center
+    repeat: no-repeat
+  overflow: hidden
   text-align: center
+  article
+    padding: 100px 100px 100px 100px
+    margin: 0 auto
+    margin-top: 75px
+    text-align: center
+    max-width: 600px
+  h1
+    font-weight: 580
+    color:  #373D3F
+    padding: 0px 30px 0px 30px
+    text-align: center
+    max-width: 600px
+  p
+    padding: 0px 30px 0px 30px
+    text-align: center
+    max-width: 600px
+    font-weight: 250
+    color: #373D3F
+
+
+// Form Section
+.form
+  position: relative
+  width: 100%
+  height: 570px
+  text-align: center
+  background:
+    color: #fff
+    position: bottom center
+    repeat: no-repeat
+  overflow: hidden
+
+  article
+    padding: 50px 50px 50px 50px
+    max-width: 840px
+    margin: 0 auto
+
+  h1
+    font-weight: 580
+    color:  #373D3F
+    padding: 0px 30px 0px 30px
+    text-align: center
+    max-width: 640px
+  p
+    padding: 0px 30px 0px 30px
+    text-align: center
+    max-width: 640px
+    font-weight: 250
+    color: #373D3F
 
   html body
     font-family: "Open Sans", sans-serif
@@ -26,7 +82,10 @@ form
 form
   max-width: 600px
   text-align: center
-  margin: 20px auto
+  margin: 0 auto
+  margin-bottom: 20px
+  overflow: hidden
+
 
 form
   input, form textarea
@@ -39,7 +98,7 @@ form
     border-radius: 8px
     display: block
     width: 100%
-    margin-top: 1em
+    margin-top: 2em
     font-family: 'Open Sans', sans-serif
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
@@ -54,7 +113,9 @@ form
 
 form
   #input-message
-    margin-bottom: -10px
+    text-align: center
+    margin-top: 1.2em
+    margin-bottom: .2em
 
 form
   #input-submit
@@ -92,13 +153,13 @@ form.left
 
 .submit
   margin: 0 auto
-  background-color: white
   width: 100%
-  padding: 25px 0px 0px 0px
+  padding: 25px 0px 25px 0px
   position: center
 
 .submit
   #input-submit
+    margin: 0 auto
     width: 40%
     color: white
     background: #3f3f3f
@@ -107,7 +168,7 @@ form.left
     line-height: 5px
     font-family: 'Open Sans', sans-serif
     text-transform: bold
-.submit
+//.submit
   #input-submit:hover
     -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6)
     -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6)
