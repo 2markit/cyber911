@@ -60,15 +60,39 @@
   // The Header links
 .header-fixed  nav
   font: 15px Arial, Helvetica, sans-serif
-  height: 75px
-  line-height: 75px
   margin: 0px 0px 0px 0px
   padding: 0px 0px 0px 0px
   float: right
 
+.clearfix:after
+  display: block
+  clear: both
 
-.header-fixed nav .services
-  display: inline-block
+.clearfix::before
+  display: block
+  clear: both
+
+/*----- Menu Outline -----*/
+.menu-wrap
+  width: 100%
+  background-color: rgba(255,255,255,.80)
+
+.menu
+  font: 15px Arial, Helvetica, sans-serif
+  margin: 0px 0px 0px 0px
+  padding: 0px 0px 0px 0px
+  height: 30px
+  line-height: 30px
+  float: right
+
+.menu li
+  margin: 0px 0px 0px 0px
+  height: 30px
+  line-height: 30px
+  list-style: none
+
+.menu a
+  transition: all linear 0.15s
   margin: 0px 0px 0px 0px
   padding: 0px 10px 5px 10px
   color:  #373D3F
@@ -86,7 +110,135 @@
   cursor: pointer
   box-sizing: border-box
 
-.header-fixed nav .about
+
+.menu li:hover > a, .menu .current-item > a
+  text-decoration: none
+  background-color: rgba(255,255,255,.90)
+
+
+/*----- Top Level -----*/
+.menu > ul > li
+  float: left
+  display: inline-block
+
+.menu > ul > li > a
+  padding: 10px 40px
+  display: inline-block
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a
+  background-color: rgba(255,255,255,.90)
+
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu
+  visibility: visible
+
+.drop-menu:hover .sub-menu
+  visibility: visible
+
+.sub-menu
+  width: 300px
+  height: 185px
+  padding: 5px 5px 5px 5px
+  border-radius: 4px
+  position: absolute
+  top: 50px
+  visibility: hidden
+  text-align: center
+  transition: opacity linear 0.15s
+  background-color: rgba(255,255,255,.90)
+  margin: 0px 0px 0px 0px
+  float: right
+
+.sub-menu li
+  display: block
+  width: 150px
+  text-align: center
+
+.sub-menu li a
+  padding: 10px 10px 10px 10px
+  width: 300px
+  line-height: 12px
+  display: block
+  text-align: center
+
+.sub-menu li a:hover, .sub-menu .current-item a
+  background-color: rgba(255,255,255,.80)
+  text-align: center
+
+.sub-menu .clean-up:hover
+  background-color: #000075
+  padding: 10px 10px 10px 10px
+  width: 300px
+  color: white
+  border-radius: 4px
+  text-align: center
+  transition: opacity linear 0.15s
+
+.sub-menu .repair:hover
+  background-color: #000075
+  padding: 10px 10px 10px 10px
+  width: 300px
+  color: white
+  border-radius: 4px
+  text-align: center
+  transition: opacity linear 0.15s
+
+.sub-menu .pick-up:hover
+  background-color: #000075
+  padding: 10px 10px 10px 10px
+  width: 300px
+  color: white
+  border-radius: 4px
+  text-align: center
+  transition: opacity linear 0.15s
+
+.sub-menu .in-home:hover
+  background-color: #000075
+  padding: 10px 10px 10px 10px
+  width: 300px
+  color: white
+  border-radius: 4px
+  text-align: center
+  transition: opacity linear 0.15s
+
+.sub-menu .data:hover
+  background-color: #000075
+  padding: 10px 10px 10px 10px
+  width: 300px
+  color: white
+  border-radius: 4px
+  text-align: center
+  transition: opacity linear 0.15s
+
+.sub-menu .remote:hover
+  background-color: #000075
+  padding: 10px 10px 10px 10px
+  width: 300px
+  color: white
+  border-radius: 4px
+  text-align: center
+  transition: opacity linear 0.15s
+
+.header-fixed nav .services
+  display: inline-block
+  margin: 22.5px 0px 0px 0px
+  padding: 0px 10px 5px 10px
+  color:  #373D3F
+  height: 30px
+  line-height: 30px
+  text-align: center
+  font-size: 12px
+  font-weight: 600
+  letter-spacing: .1rem
+  text-transform: uppercase
+  text-decoration: none
+  white-space: nowrap
+  background-color: transparent
+  border-radius: 4px
+  cursor: pointer
+  box-sizing: border-box
+
+//.header-fixed nav .about
   display: inline-block
   margin: 0px 0px 0px 0px
   padding: 0px 10px 5px 10px
@@ -107,7 +259,7 @@
 
 .header-fixed nav .contact
   display: inline-block
-  margin: 0px 5px 0px 0px
+  margin: 22.5px 5px 0px 0px
   padding: 0px 10px 5px 10px
   color:  #373D3F
   height: 30px
@@ -137,13 +289,13 @@
   background-color: #000075
   color: white
   border-radius: 4px
-  margin: 0px 0px 0px 0px
+  margin: 22.5px 0px 0px 0px
   padding: 0px 10px 10px 10px
   height: 30px
   line-height: 30px
   letter-spacing: .1rem
 
-.header-fixed nav .about:hover
+//.header-fixed nav .about:hover
   background-color: #000075
   color: white
   border-radius: 4px
@@ -157,31 +309,28 @@
   background-color: #000075
   color: white
   border-radius: 4px
-  margin: 0px 5px 0px 0px
+  margin: 22.5px 5px 0px 0px
   padding: 0px 10px 10px 10px
   height: 30px
   line-height: 30px
   letter-spacing: .1rem
 
-.phone-number:hover
+.phone:hover
   background-color: #000075
   color: white
   border-radius: 4px
+  height: 40px
+  line-height: 36px
+  margin-top: 19px
   padding: 0px 3px 0px 7px
 
 .phone
-  padding: 0px 0px 0px 0px
-  margin: 0px 0px 15px 0px
-  height: 75px
-  line-height: 75px
-
-.phone-number
   display: inline-block
   padding: 0px 5px 0px 5px
   margin: 0px 0px 10px 3px
   color:  #373D3F
   text-align: center
-  font-size: 16px
+  font-size: 15px
   font-weight: 600
   line-height: 32px
   letter-spacing: .1rem
@@ -190,5 +339,7 @@
 
 .phone-icon
   height: 25px
-  padding: 0px 0px 0px 0px
+  line-height: 25px
+  padding: 22px 0px 0px 0px
   margin: 0px 0px -7px 0px
+  float: left

@@ -2034,7 +2034,8 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 0; }
 
 .para-box-2 {
   position: relative;

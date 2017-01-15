@@ -11,3 +11,21 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     }
   }
 });
+
+var timer;
+
+$(".drop-menu").on("mouseover", function() {
+  clearTimeout(timer);
+  openSubmenu();
+}).on("mouseleave", function() {
+  timer = setTimeout(
+    closeSubmenu
+  , 1000);
+});
+
+function openSubmenu() {
+  $(".submenu").addClass("visible");
+}
+function closeSubmenu() {
+  $(".submenu").removeClass("visible");
+}
