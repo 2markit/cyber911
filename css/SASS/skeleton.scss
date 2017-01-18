@@ -434,17 +434,6 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Making the header responsive. */
-
-
-
 /* For the headers to look good, be sure to reset the margin and padding of the body */
 
 body {
@@ -608,12 +597,20 @@ body {
   }
 }
 
-@media (max-width: 500px) {
-  .header-fixed nav .services {
-    display: none;
+@media (max-width: 425px) {
+  .header-fixed {
+  padding: 0px 25px 0px 25px;
   }
-  .header-fixed nav .about {
-    display: none;
+  .header-fixed .sub-menu {
+    left: 0%;
+  }
+  .header-fixed nav .services:hover {
+    margin: 22.5px 5px 0px 0px;
+    margin-left: 0px;
+  }
+  .header-fixed nav .services {
+    margin: 22.5px 5px 0px 0px;
+    float: left;
   }
   .header-fixed nav .contact {
     display: none;
@@ -651,12 +648,18 @@ body {
 }
 
 
+@media only screen and (min-width:426px) and (max-width: 638px) {
+  .header-fixed .sub-menu {
+    left: 24%;
+  }
+}
+
 @media (max-width: 638px) {
-  .header-fixed .phone-number {
+  .header-fixed .phone {
     display: none;
   }
   .header-fixed .phone-icon {
-
+    padding: 24px 0px 0px 0px;
   }
   .header-fixed .title{
     display: none;
@@ -674,43 +677,43 @@ body {
 @media (max-width: 700px) {
   .content-1 {
     margin-top: 75px;
-    height: 400px;
+    height: 385px;
   }
   .content-1 article {
-    padding: 85px 50px 50px 50px;
+    padding: 60px 50px 65px 50px;
   }
   .content-2 {
     height: 330px;
   }
   .content-2 article {
-    padding: 50px 50px 50px 50px;
+    padding: 40px 50px 40px 50px;
   }
   .content-3 {
     height: 330px;
   }
   .content-3 article {
-    padding: 50px 50px 50px 50px;
+    padding: 40px 50px 40px 50px;
   }
   .content-4 {
     height: 330px;
   }
   .content-4 article {
-    padding: 50px 50px 50px 50px;
+    padding: 40px 50px 40px 50px;
   }
   .content-5 {
     height: 330px;
   }
   .content-5 article {
-    padding: 50px 50px 50px 50px;
+    padding: 40px 50px 40px 50px;
   }
   .content-6 {
     height: 390px;
   }
   .content-6 article {
-    padding: 50px 50px 50px 50px;
+    padding: 40px 50px 40px 50px;
   }
   .content-7 article {
-    padding: 50px 50px 50px 50px;
+    padding: 40px 50px 40px 50px;
   }
 }
 
@@ -718,6 +721,9 @@ body {
 @media (max-width: 700px) {
   .para-box {
    display: none;
+  }
+  .header-fixed .sub-menu {
+    background-color: rgb(255,255,255);
   }
  }
 
@@ -741,6 +747,50 @@ body {
   }
 }
 
+@media only screen and (min-width:700px) and (max-width: 805px) {
+  .content-1 {
+    height: 380px;
+  }
+  .content-1 article {
+    padding: 50px 50px 50px 50px;
+  }
+  .content-2 {
+    height: 380px;
+  }
+  .content-2 article {
+    padding: 50px 50px 50px 50px;
+  }
+  .content-3 {
+    height: 380px;
+  }
+  .content-3 article {
+    padding: 50px 50px 50px 50px;
+  }
+  .content-4 {
+    height: 380px;
+  }
+  .content-4 article {
+    padding: 50px 50px 50px 50px;
+  }
+  .content-5 {
+    height: 380px;
+  }
+  .content-5 article {
+    padding: 50px 50px 50px 50px;
+  }
+  .content-6 {
+    height: 380px;
+  }
+  .content-6 article {
+    padding: 50px 50px 50px 50px;
+  }
+  .content-7 {
+    height: 380px;
+  }
+  .content-7 article {
+    padding: 50px 50px 50px 50px;
+  }
+}
 
 @media (max-width: 880px) {
    .para-box {
@@ -762,13 +812,12 @@ body {
 }
 
 
-@media (max-width: 1000px) {
+@media only screen and (min-width:881px) and (max-width: 1000px) {
   .para-box {
     height: 350px;
     background-image: url(../images/hdd-bg.png);
   }
 }
-
 
 //Form
 @media (max-width: 480px) {

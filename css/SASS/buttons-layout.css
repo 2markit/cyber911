@@ -880,9 +880,6 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-/* Larger than mobile */
-/* Larger than phablet (also point when grid becomes active) */
-/* Making the header responsive. */
 /* For the headers to look good, be sure to reset the margin and padding of the body */
 body {
   margin: 0;
@@ -1038,12 +1035,20 @@ body {
 
   .content-7 p {
     padding: 0px 10px 0px 10px; } }
-@media (max-width: 500px) {
-  .header-fixed nav .services {
-    display: none; }
+@media (max-width: 425px) {
+  .header-fixed {
+    padding: 0px 25px 0px 25px; }
 
-  .header-fixed nav .about {
-    display: none; }
+  .header-fixed .sub-menu {
+    left: 0%; }
+
+  .header-fixed nav .services:hover {
+    margin: 22.5px 5px 0px 0px;
+    margin-left: 0px; }
+
+  .header-fixed nav .services {
+    margin: 22.5px 5px 0px 0px;
+    float: left; }
 
   .header-fixed nav .contact {
     display: none; } }
@@ -1065,9 +1070,15 @@ body {
 
   .content-7 {
     height: 425px; } }
+@media only screen and (min-width: 426px) and (max-width: 638px) {
+  .header-fixed .sub-menu {
+    left: 24%; } }
 @media (max-width: 638px) {
-  .header-fixed .phone-number {
+  .header-fixed .phone {
     display: none; }
+
+  .header-fixed .phone-icon {
+    padding: 24px 0px 0px 0px; }
 
   .header-fixed .title {
     display: none; } }
@@ -1116,7 +1127,10 @@ body {
     padding: 50px 50px 50px 50px; } }
 @media (max-width: 700px) {
   .para-box {
-    display: none; } }
+    display: none; }
+
+  .header-fixed .sub-menu {
+    background-color: white; } }
 @media (max-width: 700px) {
   .content-footer .contact-link h6 {
     margin-bottom: 10px; }
@@ -1145,7 +1159,7 @@ body {
 
   .para-box-2 {
     display: none; } }
-@media (max-width: 1000px) {
+@media only screen and (min-width: 881px) and (max-width: 1000px) {
   .para-box {
     height: 350px;
     background-image: url(../images/hdd-bg.png); } }
@@ -2042,15 +2056,14 @@ body {
     padding: 0px 30px 0px 30px;
     text-align: center;
     max-width: 640px; }
-
-p {
-  padding: 0px 0px 0px 0px;
-  text-align: center;
-  max-width: 240px;
-  font-weight: 250;
-  font-size: 13px;
-  color: #373D3F;
-  margin-left: 35px; }
+  .content-icon p {
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    max-width: 240px;
+    font-weight: 250;
+    font-size: 13px;
+    color: #373D3F;
+    margin-left: 35px; }
 
 .icons {
   margin: 0px 0px 0px 0px;
